@@ -49,6 +49,17 @@ p {
     min-width: 100%;
 }
 
+.overlay {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
 .hero {
     height: 100vh;
     background: url(../img/Travel\ Time.jpg);
@@ -179,18 +190,14 @@ p {
 }
 
 .travel__item-desc {
+    margin-top: 16px;
+    line-height: 126%;
     font-family: var(--font-family);
     font-weight: 300;
-    font-size: 16px;
+    font-size: 18.2px;
     color: var(--white);
 }
 
-.travel__item-button {
-    border-radius: 8px;
-    width: 96px;
-    height: 39px;
-    background: rgba(78, 78, 78, 0.45);
-}
 
 .readmore {
     font-family: var(--second-family);
@@ -198,7 +205,14 @@ p {
     font-size: 12px;
     line-height: 233%;
     color: var(--white);
-    display: flex;
+    border-radius: 8px;
+    width: 96px;
+    height: 39px;
+    background: rgba(78, 78, 78, 0.45);
+    padding-top: 6px;
+    display: block;
+    margin-left: 160px;
+    margin-top: 42px;
     text-align: center;
 }
 
@@ -208,4 +222,20 @@ p {
     background-image: url(../img/TravelTime1.png);
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 125px 0px 100px 0px;
+}
+
+.about__title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 48px;
+    color: var(--white);
+}
+
+.about-us__desc {
+    padding-top: 84px;
+    font-family: var(--font-family);
+    font-weight: 275;
+    font-size: 32px;
+    color: var(--white);
 }
